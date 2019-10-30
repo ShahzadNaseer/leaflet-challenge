@@ -43,7 +43,7 @@ d3.json(plate_url, function (geoJson) {
         style: function (geoJsonFeature) {
             return {
                 weight: 2,
-                color: 'royalblue'
+                color: 'blue'
             }
         },
     }).addTo(faultline);
@@ -109,7 +109,7 @@ function createMap() {
 
     var mymap = L.map('map', {
         center: [37.8968, -119.5828],
-        zoom: 3.3,
+        zoom: 3.5,
         layers: [satellite, earthquake, faultline]
     });
 
